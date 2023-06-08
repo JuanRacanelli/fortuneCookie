@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+/* SCREEN 1 */
+
+main {
+  background: #FFFFFF;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: .5rem;
+
+  width: 42.8rem;
+  height: 42.4rem;
+
+  padding: 6.4rem 4.8rem;
+  text-align: center;
+}
+
+main
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  
+  color: #34355B;
+
+  margin-bottom: 1.4rem;
+}
+
+main
+p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  
+  color: #34355B;
+}
+
+.closedCookie {
+  background-image: url(./images/fortune-cookie.png);
+  width: 30rem;
+  height: 20rem;
+
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+/* SCREEN 2 */
+
+section {
+  background: #FFFFFF;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: .5rem;
+
+  width: 42.8rem;
+  height: 56.4rem;
+
+  padding: 6.4rem 4.8rem;
+  gap: 1rem; 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+section
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+
+  color: #34355B;
+
+  margin-bottom: 1.7rem;
+}
+
+section
+p {
+  font-family: 'Dancing Script', sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+
+  color: #000000;
+
+  background-color: #E4EDF1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+  width: 29.3rem;
+  height: 10.7rem;
+
+  padding: 1rem;
+
+  margin-bottom: 2rem;
+}
+
+.openedCookie {
+  background-image: url(./images/opened-cookie.png);
+
+  width: 30rem;
+  height: 11.4rem;
+  
+  cursor: pointer;
+}
+
+section
+button {
+  border-style: none;
+
+  background: #FF9500;
+  border-radius: .4rem;
+
+  padding: 1.6rem;
+
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  color: #FFFFFF;
+
+  margin-top: 4rem;
+
+  cursor: pointer;
+}
+
+section
+button:hover {
+  background: #b06802;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
